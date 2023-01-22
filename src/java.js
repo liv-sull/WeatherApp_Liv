@@ -21,7 +21,6 @@ let h4 = document.querySelector("h4");
 h4.innerHTML = `${day} ${hours}:${minutes}`;
 
 function showWeather(response) {
-  event.preventDefault();
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temp-value").innerHTML = Math.round(
     response.data.main.temp
