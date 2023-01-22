@@ -13,15 +13,14 @@ let hours = currentTime.getHours();
 if (hours < 10) {
   hours = `0${hours}`;
 }
-let mintues = currentTime.getMinutes();
-if (mintues < 10) {
-  hours = `0${mintues}`;
+let minutes = currentTime.getMinutes();
+if (minutes < 10) {
+  hours = `0${minutes}`;
 }
 let h4 = document.querySelector("h4");
-h4.innerHTML = `${day} ${hours}:${mintues}`;
+h4.innerHTML = `${day} ${hours}:${minutes}`;
 
 function showWeather(response) {
-  event.preventDefault();
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temp-value").innerHTML = Math.round(
     response.data.main.temp
