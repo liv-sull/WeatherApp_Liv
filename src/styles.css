@@ -55,3 +55,20 @@ h4 {
 .search-box {
   margin-left: 580px;
 }
+.open-source {
+  padding: 5px;
+  margin-left: 112px;
+}
+
+a:link {
+  text-decoration: none;
+  font-size: 10px;
+  font-weight: bold;
+}
+a:hover {
+  color: yellow;
+}
+#myname {
+  font-size: 10px;
+  padding-left: 7px;
+}
